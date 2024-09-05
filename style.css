@@ -1,3 +1,31 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+nav{
+  padding: 20px 40px;
+  color: rgb(233, 229, 229);
+}
+.menu{
+  transform: skewX(-40deg) rotateZ(-40deg);
+  position: fixed;
+  top:98px;
+  right: 43px;
+  border: none;
+}
+@media (max-width:730px){
+  nav{
+    padding: 20px 40px;
+  }
+.navUl{
+display: none;
+  }
+  .navImg{
+    height: 20px;
+  }
+  #toggle{
+    display: block;
+  }
+}
+body,html{
+  min-width: 350px;
+}

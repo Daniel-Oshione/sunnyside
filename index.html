@@ -5,23 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sunnyside</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div id="app">
-      <div class="h-[100vh] w-full" style="background-image: url('./public/images/desktop/image-header.jpg'); background-repeat: repeat; background-size: cover;">
-      <nav class="flex justify-between px-20 py-7 text-white items-center">
-        <h1>
-           <img src="./public/images/logo.svg" alt="">
-        </h1>
+      <div class="h-[100vh] w-full" style="background-image: url('./public/images/desktop/image-header.jpg'); background-repeat: repeat; background-size: cover; background-position: center;">
+      <nav>
+        <div class="flex justify-between items-center">
+           <img src="./public/images/logo.svg" alt="" class="navImg cursor-pointer h-10">
+        <div class="navUl">
         <ul class="flex px-5 items-center">
-          <li class="px-5">About</li>
-          <li class="px-5"> Services</li>
-          <li class="px-5">Projects</li>
-          <button class="bg-blue-300 py-3 px-5 rounded-full">CONTACT</button>
+          <li class="px-5 cursor-pointer hover:text-white">About</li>
+          <li class="px-5 cursor-pointer hover:text-white"> Services</li>
+          <li class="px-5 cursor-pointer hover:text-white">Projects</li>
+          <button class="bg-blue-300 py-3 px-5 rounded-full cursor-pointer hover:text-white">CONTACT</button>
         </ul>
+        </div>
+        <img src="./public/images/icon-hamburger.svg" alt="" class="hidden" id="toggle">
+      </div>
       </nav>
+      <div class="px-10 mt-7 hidden" id="menuContents">
+        <div class="menu bg-white w-5 text-white">.</div>
+      <ul class="flex flex-col bg-white items-center relative">
+        <li class="py-3 cursor-pointer hover:text-white">About</li>
+        <li class="py-3 cursor-pointer hover:text-white"> Services</li>
+        <li class="py-3 cursor-pointer hover:text-white">Projects</li>
+        <button class="bg-yellow-300 py-3 px-5 my-3 rounded-full cursor-pointer hover:text-white">CONTACT</button>
+      </ul>
+      </div>
     </div>
     </div>
-    <script type="module" src="/main.js"></script>
+    </div>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
