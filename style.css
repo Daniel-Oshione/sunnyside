@@ -33,7 +33,7 @@ text-decoration: 8px underline rgb(248, 64, 95);
   transition: 500ms;
 }
 .clients:hover{
-  box-shadow: 1px 5px 5px black;
+  box-shadow: 1px 5px 5px rgb(73, 118, 102);
   transform: translateY(-5px);
   transition: 100ms;
 }
