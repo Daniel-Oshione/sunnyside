@@ -3,7 +3,7 @@
 }
 nav{
   padding: 20px 40px;
-  color: rgb(233, 229, 229);
+  color: rgb(243, 237, 237);
 }
 .menu{
   transform: skewX(-40deg) rotateZ(-40deg);
@@ -12,7 +12,32 @@ nav{
   right: 43px;
   border: none;
 }
-@media (max-width:730px){
+.menubar{
+  display: none;
+}
+
+.arrowdown{
+  margin: auto;
+}
+.learnmore1{
+text-decoration: 8px underline yellow;
+}
+.learnmore2{
+text-decoration: 8px underline rgb(248, 64, 95);
+}
+.clients{
+  padding: 10px 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color:rgb(248, 248, 248);
+  transition: 500ms;
+}
+.clients:hover{
+  box-shadow: 1px 5px 5px black;
+  transform: translateY(-5px);
+  transition: 100ms;
+}
+@media (max-width:800px){
   nav{
     padding: 20px 40px;
   }
@@ -24,6 +49,9 @@ display: none;
   }
   #toggle{
     display: block;
+  }
+  .creatives h1{
+    font-size: 38px;
   }
 }
 body,html{

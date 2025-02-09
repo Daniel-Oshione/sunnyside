@@ -1,40 +1,184 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sunnyside</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="app">
-      <div class="h-[100vh] w-full" style="background-image: url('./public/images/desktop/image-header.jpg'); background-repeat: repeat; background-size: cover; background-position: center;">
-      <nav>
-        <div class="flex justify-between items-center">
-           <img src="./public/images/logo.svg" alt="" class="navImg cursor-pointer h-10">
-        <div class="navUl">
-        <ul class="flex px-5 items-center">
-          <li class="px-5 cursor-pointer hover:text-white">About</li>
-          <li class="px-5 cursor-pointer hover:text-white"> Services</li>
-          <li class="px-5 cursor-pointer hover:text-white">Projects</li>
-          <button class="bg-blue-300 py-3 px-5 rounded-full cursor-pointer hover:text-white">CONTACT</button>
-        </ul>
+      <div
+        class="h-[100vh] w-full"
+        style="
+          background-image: url('./public/images/desktop/image-header.jpg');
+          background-repeat: repeat;
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <nav>
+          <div class="flex justify-between items-center">
+            <img
+              src="./public/images/logo.svg"
+              alt=""
+              class="navImg cursor-pointer h-10"
+            />
+            <div class="navUl">
+              <ul class="flex px-5 items-center">
+                <li class="px-5 cursor-pointer hover:text-white">About</li>
+                <li class="px-5 cursor-pointer hover:text-white">Services</li>
+                <li class="px-5 cursor-pointer hover:text-white">Projects</li>
+                <button
+                  class="bg-blue-300 py-3 px-5 rounded-full cursor-pointer hover:text-white"
+                >
+                  CONTACT
+                </button>
+              </ul>
+            </div>
+            <img
+              src="./public/images/icon-hamburger.svg"
+              alt=""
+              class="hidden cursor-pointer"
+              id="toggle"
+            />
+            <h1 class="text-white text-2xl hidden" id="close_menu">X</h1>
+          </div>
+        </nav>
+        <div class="px-10 mt-7 menubar" id="menuContents">
+          <div class="menu bg-white w-5 text-white">.</div>
+          <ul class="flex flex-col bg-white items-center relative">
+            <li class="py-3 cursor-pointer hover:text-indigo-700">About</li>
+            <li class="py-3 cursor-pointer hover:text-indigo-700">Services</li>
+            <li class="py-3 cursor-pointer hover:text-indigo-700">Projects</li>
+            <button
+              class="bg-yellow-300 py-3 px-5 my-3 rounded-full cursor-pointer hover:text-white"
+            >
+              CONTACT
+            </button>
+          </ul>
         </div>
-        <img src="./public/images/icon-hamburger.svg" alt="" class="hidden" id="toggle">
+        <div class="mt-32 text-center creatives">
+          <h1
+            class="my-5 text-5xl tracking-widest font-serif text-white font-black"
+          >
+            WE ARE CREATIVES
+          </h1>
+          <img
+            src="./public/images/icon-arrow-down.svg"
+            class="arrowdown"
+            alt=""
+          />
+        </div>
       </div>
-      </nav>
-      <div class="px-10 mt-7 hidden" id="menuContents">
-        <div class="menu bg-white w-5 text-white">.</div>
-      <ul class="flex flex-col bg-white items-center relative">
-        <li class="py-3 cursor-pointer hover:text-white">About</li>
-        <li class="py-3 cursor-pointer hover:text-white"> Services</li>
-        <li class="py-3 cursor-pointer hover:text-white">Projects</li>
-        <button class="bg-yellow-300 py-3 px-5 my-3 rounded-full cursor-pointer hover:text-white">CONTACT</button>
-      </ul>
+      <div class="grid grid-cols-2 midgrid w-full">
+        <div
+          class="bg-white font-serif midtext flex flex-col justify-center px-24"
+        >
+          <h1 class="font-serif mb-7 font-black text-4xl">
+            Transform your <br />
+            brand
+          </h1>
+          <p class="mb-7 text-sm text-slate-500 font-bold text-wrap">
+            We are a full service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <a
+            href="#"
+            class="font-serif font-bold text-sm tracking-wider cursor-pointer learnmore1"
+            >LEARN MORE</a
+          >
+        </div>
+        <img src="./public/images/desktop/image-transform.jpg" alt="" />
+        <img src="./public/images/desktop/image-stand-out.jpg" alt="" />
+        <div
+          class="bg-white font-sarif midtext flex flex-col justify-center px-24"
+        >
+          <h1 class="font-serif mb-7 font-black text-4xl">
+            Stand out to right the right audience
+          </h1>
+          <p class="mb-7 text-sm text-slate-500 font-bold text-wrap">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters. We'll build and
+            extend your brand in digital places.
+          </p>
+          <a
+            href="#"
+            class="font-serif font-bold text-sm tracking-wider cursor-pointer learnmore2"
+            >LEARN MORE</a
+          >
+        </div>
+        <div class="relative">
+          <img
+            src="./public/images/desktop/image-graphic-design.jpg"
+            alt="Graphic Design"
+            class="w-full h-auto"
+          />
+          <div
+            class="absolute bottom-0 left-1/2 -translate-x-1/2 text-center mb-12"
+          >
+            <h1 class="text-green-900 text-2xl font-black font-serif">
+              Graphic Design
+            </h1>
+            <p class="text-green-800 text-sm mt-4 font-bold">
+              Great design makes you memorable. We deliver artworks that
+              underscores your brand message and captures potential client's
+              attention
+            </p>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="./public/images/desktop/image-photography.jpg"
+            alt=""
+            class="w-full h-auto"
+          />
+          <div
+            class="absolute bottom-0 left-1/2 -translate-x-1/2 text-center mb-12"
+          >
+            <h1 class="text-cyan-900 text-2xl font-black font-serif">
+              Photography
+            </h1>
+            <p class="text-cyan-800 text-sm mt-4 font-bold">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
+      <div class="px-32 mb-32">
+              <h1 class="mt-36 mb-10 text-center text-2xl text-gray-600 font-serif font-black tracking-widest">CLIENT TESTIMONIALS</h1>
+              <div class="flex items-center justify-center">
+                <div class="flex flex-col items-center mx-5 clients">
+                  <img src="./public/images/image-emily.jpg" alt="" class="rounded-full w-20 h-20 mb-10">
+                  <p class="text-center text-gray-700 mb-14">We put our trust in sunnyside and they delivered, making sure our needs were met and deadlines are always met.</p>
+                  <h4 class="font-black font-serif mb-2">Emily R.</h4>
+                  <h5 class="text-sm text-gray-700">Marketing Director</h5>
+                </div>
+                <div class="flex flex-col items-center mx-5 clients">
+                  <img src="./public/images/image-thomas.jpg" alt="" class="rounded-full w-20 h-20 mb-10">
+                  <p class="text-center text-gray-700 mb-14">We put our trust in sunnyside and they delivered, making sure our needs are met and deadlines are always met.</p>
+                  <h4 class="font-black font-serif mb-2">Thomas S.</h4>
+                  <h5 class="text-sm text-gray-700">Marketing Director</h5>
+                </div>
+                <div class="flex flex-col items-center mx-5 clients"> 
+                  <img src="./public/images/image-jennie.jpg" alt="" class="rounded-full w-20 h-20 mb-10">
+                  <p class="text-center text-gray-700 mb-14">We put our trust in sunnyside and they delivered, making sure our needs are met and deadlines are always met.</p>
+                  <h4 class="font-black font-serif mb-2">Jennie F.</h4>
+                  <h5 class="text-sm text-gray-700">Marketing Director</h5></div>
+              </div>
+      </div>
+      <div class="w-full h-80 grid grid-cols-4">
+        <img src="./public/images/desktop/image-gallery-milkbottles.jpg" alt="">
+        <img src="./public/images/desktop/image-gallery-orange.jpg" alt="">
+        <img src="./public/images/desktop/image-gallery-cone.jpg" alt="">
+        <img src="./public/images/desktop/image-gallery-sugarcubes.jpg" alt="">
+      </div>
+      <footer>
+        
+      </footer>
     </div>
     <script type="module" src="main.js"></script>
   </body>
